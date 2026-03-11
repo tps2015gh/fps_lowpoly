@@ -173,6 +173,16 @@ abcd_firsh3d/
 ## License
 Distributed under the **MIT License**. See `LICENSE` for more details.
 
+## Disclaimer / Warranty
+**This software is provided "AS IS" without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement.**
+
+In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
+
+- This is a **portfolio/educational project** and not intended for production use
+- No guarantee of fitness, security, or completeness
+- Use at your own risk
+- No technical support or updates guaranteed
+
 ---
 *Special thanks to the developer for the vision and for coordinating this virtual team to success!*
 
