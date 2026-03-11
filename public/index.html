@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Low-Poly FPS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        <div id="ui-overlay">
+            <div id="crosshair"></div>
+            <div id="weapon-info">Weapon: Glock-18</div>
+            <div id="health-info">Health: 100</div>
+            <div id="ammo-info">Ammo: 20/100</div>
+            <div id="weapon-icon" style="position: absolute; top: 10px; left: 50%; transform: translateX(-50%); background: rgba(0,0,0,0.7); padding: 10px 20px; border-radius: 8px; border: 2px solid #fff; display: flex; align-items: center; gap: 10px;">
+                <div id="gun-icon-display" style="font-size: 32px;">🔫</div>
+                <div id="gun-name-display" style="color: #fff; font-family: monospace; font-size: 16px; font-weight: bold;">Glock-18</div>
+            </div>
+            <div id="difficulty-info" style="position: absolute; top: 10px; right: 10px; background: rgba(0,0,0,0.7); color: #ff0; padding: 10px; font-family: monospace; font-size: 14px; border: 1px solid #ff0;">Bot Difficulty: Level 1</div>
+            <div id="instructions">
+                WASD: Move | SPACE: Jump | SHIFT: Run | L-Click: Shoot | 1/2/3: Change Weapon | R: Reload | Z/Right-Click: Zoom (Sniper)
+                <br>Press ESC to release mouse
+            </div>
+            <div id="log-container" style="position: absolute; bottom: 100px; left: 10px; background: rgba(0,0,0,0.5); color: #0f0; font-family: monospace; padding: 5px; max-height: 200px; overflow-y: auto; pointer-events: none; font-size: 12px; width: 300px; border: 1px solid #0f0;">
+                <div>--- LOG START ---</div>
+            </div>
+        </div>
+        <div id="customization-panel">
+            <h3>Character Colors</h3>
+            <label>Hat: <input type="color" id="color-hat" value="#222222"></label>
+            <label>Shirt: <input type="color" id="color-shirt" value="#4444aa"></label>
+            <label>Shorts: <input type="color" id="color-shorts" value="#222222"></label>
+            <button id="btn-save-colors">Apply Colors</button>
+            <br><br>
+            <button id="btn-start">Start Game (Lock Mouse)</button>
+        </div>
+    </div>
+
+    <!-- Three.js as ES Module from CDN -->
+    <script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    
+    <script type="module" src="js/game.js"></script>
+</body>
+</html>

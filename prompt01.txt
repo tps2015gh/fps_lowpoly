@@ -1,0 +1,37 @@
+create interactive game style counter stike . map cs_untitled 
+add gun and device  use only low polygon 
+select gun only basic gun and any machine gun  
+can change color of shirt and hat and short 
+
+i want as web application in browser 
+server is go lang or python you can choose .  
+
+Team for this company is (virtual ai agent) : 
+
+game designer
+graphics  
+Lead programmer  this may ( maybe three.js or else ) 
+tester ( this may use playwright-cli)
+
+make small abount of token , so talk each other as small token . 
+
+i want to push this to github too.  please add MIT License and REAME  
+(in readme i as director and owner of program  , thanks team  )
+add your credit about your model and signature to  README.MD too  
+add document about program and doc about physics in game and gun  as doc in folder \doc as MD file  
+link all doc to REAME.MD  
+
+calculate with vector n-dimension possible to success project . 
+add AI.MD and gemini.md to  other program to maintain this program next ,
+
+this is single player with BOT
+
+I develope on windows 11 notebook ram 8GB please customize tech to program can run in this  
+
+also think this is just my portfolio !! not real production game . 
+think about HR and Lead Dev to understand what happen about my skill  . 
+ok my skill is not coding but cooperate team AI and integrate many components as product , haha  . 
+
+i will run in YOLO mode , so preserve use small  token to communication too .
+
+thanks. 

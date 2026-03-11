@@ -1,0 +1,152 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #000;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#game-canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#ui-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+#crosshair {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00ff00;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+#crosshair.sniper {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #ff0000;
+    border-radius: 50%;
+}
+
+#crosshair.sniper::before,
+#crosshair.sniper::after {
+    content: '';
+    position: absolute;
+    background: #ff0000;
+}
+
+#crosshair.sniper::before {
+    width: 2px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#crosshair.sniper::after {
+    width: 40px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#weapon-info, #health-info, #ammo-info, #instructions {
+    position: absolute;
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+}
+
+#weapon-info {
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.5em;
+    color: #ffa500;
+}
+
+#health-info {
+    bottom: 20px;
+    left: 20px;
+    font-size: 1.5em;
+    color: #ff0000;
+}
+
+#ammo-info {
+    bottom: 60px;
+    right: 20px;
+    font-size: 1.2em;
+    color: #00ff00;
+}
+
+#instructions {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 0.8em;
+}
+
+#customization-panel {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: rgba(30, 30, 30, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #555;
+    z-index: 100;
+}
+
+#customization-panel h3 {
+    margin-top: 0;
+}
+
+#customization-panel label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#customization-panel input {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+#btn-save-colors, #btn-start {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    background: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#btn-start {
+    margin-top: 10px;
+    background: #28a745;
+}
+
+#btn-save-colors:hover, #btn-start:hover {
+    background: #666;
+}
