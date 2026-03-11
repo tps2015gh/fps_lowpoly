@@ -146,6 +146,16 @@ abcd_firsh3d/
 | R | Reload |
 | ESC | Release mouse focus |
 
+## Screenshots
+
+### Glock-18 Gameplay (Bot Difficulty Level 2)
+![Glock-18 Gameplay](image/Screenshot-2026-03-12-004019.png)
+*Character customization panel and bot difficulty display (Level 2 | DMG: 9 | ACC: 50%)*
+
+### AWP Sniper One-Shot Kill (Bot Difficulty Level 3)
+![AWP Sniper Gameplay](image/Screenshot-2026-03-12-004239.png)
+*Sniper rifle with 100 damage one-shot kill, bot difficulty progression system*
+
 ## Features
 - 🎮 Low-poly 3D graphics with Three.js
 - 🤖 Progressive difficulty AI bot (5 levels)
